@@ -10,16 +10,12 @@ They collect a massive amount of data from all over the world each day. We are b
 
 ### Task 1: Basic Visualization
 
-![BasicMap](basic_map)
-
-Your first task is to visualize an earthquake data set.
+![WeekBasicMap](https://github.com/PeiDay/Leaflet-Challenge/blob/main/static/images/basic_week_map.png)
 
 1. **Get Dataset**
 
    The USGS provides earthquake data in a number of different formats, updated every 5 minutes. We retrieved a JSON representation of "All Earthquakes from the Past 7 Days" from the [USGS GeoJSON Feed](http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) page. 
    We pulled the JSON data from this URL for our visualization.
-
-   ![4-JSON](Images/4-JSON.png)
 
 2. **Import & Visualize the Data**
 
