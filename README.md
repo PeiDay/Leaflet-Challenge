@@ -27,3 +27,5 @@ They collect a massive amount of data from all over the world each day. We are b
 
    * A legend on the bottom right corner will provide context for the map data.
 
+   ![tectonic.png](https://github.com/PeiDay/Leaflet-Challenge/blob/main/static/images/tectonic%20map.png)
+
