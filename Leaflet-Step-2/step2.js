@@ -39,7 +39,7 @@ var tecPlateLayer = new L.LayerGroup();
 // Overlays that can be toggled on or off
 var overlayMaps = {
     Earthquakes: earthquakesLayer,
-    "Tectonic Plates": tecPlateLayer,
+    "Tectonic Plates": tecPlateLayer
   };
 
 // Pass our map layers into our layer control.
@@ -123,17 +123,20 @@ d3.json(earthquakeUrl).then(function (data) {
         return legend_div;
     };
     legend.addTo(myMap);
+
+    d3.json(tecPlateUrl).then(function(tectonicData) {
+        L.geoJSON(tectonicData, {
+            color: "red",
+            weight: 3,
+        }).addTo(tecPlateLayer);
+
+        tecPlateLayer.addTo(myMap);
+    })
 });
 
-d3.json(tecPlateUrl, function(tectonicData) {
-    L.geoJSON(tectonicData, {
-        color: "red",
-        weight: 3,
-})
-.addTo(tecPlateLayer);
 
-tecPlateLayer.addTo(myMap);
-});
+
+
 
 
 
